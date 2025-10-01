@@ -1,0 +1,395 @@
+/* ----------------------------------------------------0----------- */
+/*    bank_type1b.css              2025.07.01                       */
+/*      bank_type1.css のバージョンアップ版                         */
+/*      修正をいれたのは、 クラス ".bk1-tp4" の部分のみ！           */
+/*                                                                  */
+/*      後方互換性を持たせており、今までの bank_type1.css を使った  */
+/*      記事（bankOO.html）に適用しても今までどおりの表示を保つ！   */
+/* ---------------------------------------------------------------- */
+:root{                  /* ---- 表(table)の色 ---- */
+  --th-col:    #778ca3; /* グレー */
+  --part-col:  #e9faf9; /* 薄い水色 */
+  --total-col: #cdf4f0; /* 濃い水色 */
+  --wprt-col:  #f9f8ea; /* 薄い黄 */
+  --whole-col: #f7f3b7; /* 濃い黄 */
+  --obj1-col:  #caffbf; /* 明るい緑 */
+  --obj2-col:  #eaffe6; /* 明るい緑(薄) */
+  --wide-col:  #fdffbb; /* 明るい黄色 */
+  --wid2-col:  #feffe2; /* 明るい黄色(薄) */
+}
+body{
+  font-family:"Lucida Grande",Arial,sans-serif;
+  font-size:15px;
+  text-align:left;
+  margin: 0 auto;
+  padding:0;
+  line-height:1.4;
+  max-width:1000px;
+}
+.sec{
+  margin-top:7px;
+  margin-bottom:8px;
+  padding:2px;
+}
+.subsec{
+  margin:0;
+  padding:0;
+}
+.subsec + .subsec{
+  margin-top:20px;
+}
+.as-of{
+  display:inline-block;
+  border: 1px dashed #a0a0a0;
+  margin: 3px 2px 0 2px;
+  padding: 1px 3px;
+}
+.as-of p{
+  margin: 5px 3px 5px 3px;
+  padding:0;
+}
+
+h1{
+  font-size:24px;
+}
+.date_suff{
+  font-size:14px;
+  font-weight:normal;
+  color:gray;
+}
+h2{
+  font-size:18px;
+  font-weight:bold;
+  margin:12px 10px 14px 0px;
+  padding-left:2px;
+  border-bottom:1px dotted gray;
+  width: 20em;
+}
+h3{
+  font-size:16px;
+  font-weight:bold;
+  margin:22px 10px 14px 0px;
+}
+p{
+  margin: 7px 3px 7px 3px;
+  padding:0;
+}
+p + p{
+  margin-top: 0.8em;
+}
+div{
+  margin:0;
+  padding:0;
+}
+#bdy{ margin:5px 5px 20px 10px; }
+#footnote{
+  margin-top:12px;
+  margin-bottom:5px;
+  padding:2px;
+}
+.header{
+  background-color: #1d4e89;
+}
+
+.header h1{
+  display:inline-block;
+  margin: 10px 10px 0 10px;
+  padding:0;
+  color: #fff;
+}
+.header div{
+  display:inline-block;
+  margin:0 10px 10px 10px;
+  padding:0;
+}
+.header ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;     /*上下中央揃え*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size:14px;
+}
+.header li{
+  text-align:left;
+  color: #fff;
+  padding: 1px 5px 1px 1em;
+  text-indent: -1em;
+  margin:0;
+}
+.header li a{ color: #fff; }
+.header li + li{
+  margin-left:5px;
+}
+
+aside{
+  position: relative;
+  display: inline-block;
+  border-top: 1px solid gray;
+  font-size:86%;
+  margin: 15px 5px 5px 15px;
+  padding-top: 3px;
+  padding-bottom:1px;
+  background-color: #f8f8f8;
+}
+
+/* 装飾 */
+.smlfont{ font-size:94%; }             /* 少し小さいフォント */
+.ssfont{ font-size:75%; }              /* かなり小さいフォント */
+.nrm{ font-weight:normal; }            /* 標準太さのフォント */
+.bld{ font-weight:bold; }              /* 太めフォント */
+.nrap{  white-space: nowrap; }
+
+/*--- art46.css のもの ---*/
+span.sup3{
+  font-size: 76% !important;
+  vertical-align: 25%; 
+  padding-left:2px;
+}
+.sup4{
+  font-size: 86% !important;
+  vertical-align: 20%; 
+  padding-left:2px;
+}
+
+/*--------------------*/
+/*- art56.css で追加 -*/
+/*--------------------*/
+.markerY {  /* --- マーカーの黄色(art49.css) の .hlighty ----- */
+  text-decoration: underline; /* 下線 */
+  text-decoration-thickness: 0.5em; /* 線の太さ */
+  text-decoration-color: rgba(255, 228, 0, 0.5); /* 線の色 */
+  text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+  text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+/* -- art55.css より -- */
+p.add_note{
+  margin-top:6px;
+  margin-left:15px;
+  padding-top:0;
+  padding-left:1em;
+  text-indent:-1em;
+  line-height:1.3;
+  font-size: 86%;
+}
+/* ======= 表 ============= */
+table{
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:5px;
+  line-height:1.3;
+}
+tr{
+  background-color: var(--part-col);             /* ベースは 薄い水色 */
+}
+tr.cgp{ background-color: var(--total-col); }    /* 濃い水色 tp8で使用 */
+tr:last-child td{ 
+  border-bottom: solid 1px var(--th-col);        /* 表の下部はグレーの線 */
+}
+th{
+  white-space:nowrap;
+  padding: 4px;
+  text-align:center; 
+  border: solid 1px #ffffff;
+  background-color: var(--th-col);
+  color: #ffffff;
+  font-weight:normal;
+}
+td{
+  white-space:nowrap;
+  padding: 4px;
+  text-align:center; 
+  border: solid 1px #ffffff;
+}
+table caption{
+  font-weight:bold;
+  margin:0 0 2px 3px;
+  text-align:left;
+}
+table caption span{
+  font-weight:normal;
+  font-size: 86%; 
+}
+
+table + p{          margin-top:18px;  }
+table + p.add_note{ margin-top:0px; }
+
+table.bk1-tp1 tr:nth-child(1) th{
+  min-width: 6.5em;
+}
+.bk1-tp1 th span{
+  font-size:96%;
+}
+.bk1-tp1 td:nth-last-child(2){ background-color: var(--total-col); }
+.bk1-tp1 td:nth-last-child(1){ background-color: var(--part-col); }
+
+table.bk1-tp2 th{
+  min-width: 4em;
+}
+.bk1-tp2 th span{
+  font-size:96%;
+}
+.bk1-tp2 tr:nth-last-child(2) td{ background-color: var(--total-col); } 
+.bk1-tp2 tr:nth-last-child(1) td{ background-color: var(--part-col); } 
+
+.bk1-tp6 td{ padding: 2px 6px; }
+td.bkname{ width: 1.2em; }
+.bk1-tp6 td span{ font-size:96%; }
+
+.bkname{ background-color: var(--obj1-col); }
+.bk1-tp6 tr:nth-last-child(2) td{ background-color: var(--obj1-col); }
+.bk1-tp6 tr:last-child td{        background-color: var(--wide-col); }
+
+table.bk1-tp3 th{
+  min-width:3em;
+}
+.bk1-tp3 tr:nth-child(-n+2) th span{ font-size:86%; }
+.bk1-tp3 th.detail{ font-size:86%; line-height:0.95; padding-top:3px; }
+.bk1-tp3 tr:nth-last-child(2){ background-color: var(--obj1-col); }             /* 黄緑 */
+.bk1-tp3 tr:nth-last-child(1){ background-color: var(--wide-col); }             /* 黄 */
+.bk1-tp3 tr:nth-last-child(2) td:nth-child(n+3):nth-child(-n+6){  background-color: var(--obj2-col); } /* 薄い黄緑 */
+.bk1-tp3 tr:nth-last-child(1) td:nth-child(n+3):nth-child(-n+6){  background-color: var(--wid2-col); } /* 薄い 黄  */
+
+/*  決まり手 */
+.clsn{
+  font-size: 96%;
+  background-color: var(--obj2-col);
+}
+.bk1-tp4 tr:nth-last-child(2) td:nth-child(1){
+  background-color: var(--obj1-col);
+}
+.bk1-tp4 tr:nth-last-child(1) td:nth-child(1){
+  background-color: var(--wide-col);
+}
+
+.bk1-tp4 td{
+  width:160px;
+}
+.bk1-tp4 td.bkname{                               /* 2025.6 追加 */
+  width:1.4em;
+}
+.bk1-tp4 td:nth-last-child(1){
+  width:280px;
+}
+.bk1-tp4 td:nth-last-child(-n+3):nth-last-child(n+2){  /* 表を切り替え方式にする場合は 削除すること！ */
+  width:220px;
+}
+
+.bk1-tp4 td:nth-last-child(-n+3):nth-last-child(n+1) span{
+  display:inline-block;
+  box-sizing:border-box;
+  font-size:72%;
+  line-height:1.05;
+  height:2.3em;
+  padding-top:1px;
+  padding-bottom:0px;
+  vertical-align:middle;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  border-left:1px solid black;
+}
+.bk1-tp4 td:nth-last-child(-n+3):nth-last-child(n+1) span:last-child{ border-right:1px solid black; }
+.bk1-tp4 td span.ngc{ background-color:#a0c4ff; }
+.bk1-tp4 td span.mkc{ background-color:#ffadad; }
+.bk1-tp4 td span.ssc{ background-color:#ffd6a5; }
+.bk1-tp4 td span.kkc{ background-color:#caffbf; }
+.bk1-tp4 td span.ccc{ background-color:#ffffff; }        /* border付加をカット */
+.bk1-tp4 td:nth-child(n+2){  padding: 2px; }
+
+table.bk1-tp5 th{
+  min-width:4.2em;
+}
+.bk1-tp5 th span{
+  font-size:96%;
+}
+.bk1-tp5 th{ line-height:1.2; }
+.bk1-tp5 tr:nth-last-child(2){ background-color: var(--obj2-col); }             /* 薄い黄緑 */
+.bk1-tp5 tr:nth-last-child(1){ background-color: var(--wid2-col); }             /* 薄い黄 */
+.bk1-tp5 tr:nth-last-child(2) td:nth-child(-n+2){  background-color: var(--obj1-col); } /* 黄緑 */
+.bk1-tp5 tr:nth-last-child(1) td:nth-child(-n+2){  background-color: var(--wide-col); } /*  黄  */
+
+.bk1-tp8{   width: 400px; }
+.bk1-tp10{  width: 400px; }
+
+.colptn35-1 tr:nth-child(n+3):nth-child(-n+7) td:nth-last-child(8){
+  background-color: var(--obj2-col);
+}
+.colptn35-1 tr:nth-child(n+3):nth-child(-n+7) td:nth-last-child(-n+7):nth-last-child(n+6), .colptn35-1 tr:nth-child(n+3):nth-child(-n+7) td:nth-last-child(-n+2){
+  background-color: var(--total-col);
+}
+.colptn35-2 tr:nth-child(n+2):nth-child(-n+6) td:nth-last-child(3){
+  background-color: var(--obj2-col);
+}
+.colptn35-2 tr:nth-child(n+2):nth-child(-n+6) td:nth-last-child(2){
+  background-color: var(--total-col);
+}
+.colptn35-2 th:nth-child(2), .colptn35-2 th:nth-child(3){
+  width:5em;
+}
+.colptn35-3 tr:nth-child(n+3):nth-child(-n+6) td:nth-last-child(11){
+  background-color: var(--obj2-col);
+}
+.colptn35-3 tr:nth-child(n+3):nth-child(-n+6) td:nth-last-child(-n+10):nth-last-child(n+6){
+  background-color: var(--total-col);
+}
+
+table.inlist{
+  margin:4px 0 6px 5px;
+  padding:0;
+}
+table.inlist th,table.inlist td{
+  font-size: 13px;
+  font-weight: normal;
+  padding: 3px;
+  text-align:center; 
+  border: solid 1px gray;
+  background-color: #fff;
+  color: #000;
+  line-height:1.1;
+  min-width: 4em;
+}
+table.inlist th{
+  background-color:#eaece6;
+}
+table.inlist td.challenge{
+  font-size: 90%;
+}
+
+/* ---- 脚注関連 ------------------- */
+a.artlm{
+  text-decoration: none;
+  background-color:aliceblue;
+  font-weight: bold;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.artldmy{
+  padding-left: 1px;
+  padding-right: 1px;
+}
+a.artlm sup{
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+a.artln{
+  text-decoration: none;
+}
+a.artlm:hover, a.artln:hover{
+  text-decoration: underline;
+}
+ol.references{
+  margin: 15px 0px 15px 0px;
+  padding:0; 
+  list-style-type: decimal;
+}
+ol.references li{
+  margin: 0 0 12px 20px;
+  font-size:14px;
+  line-height:140%;
+  text-indent: -0.5em;    
+  padding: 0 0 0 0.5em;
+}

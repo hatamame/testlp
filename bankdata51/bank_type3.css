@@ -1,0 +1,61 @@
+/* -------------------------------------- */
+/*    bank_type3.css         2024.08.19   */
+/* -------------------------------------- */
+/* -- bank_type2.css と同じ部分 --------- */
+/* -- aside の修飾 -- */
+aside.amemo:before{
+  position: absolute;
+  top:-9px;
+  left:15px;
+  background-color: #f8f8f8;
+  content: "< memo >";
+}
+aside.amemo content{
+  position: absolute;
+  top:-9px;
+  left:35px;
+  background-color: #f8f8f8;
+}
+ /* ---------------------- */
+.sml86f{ font-size: 86%; }
+.indent1{
+  text-indent: -1.4em;
+  padding-left: 1.4em;
+}
+ /* ---------------------- */
+table + p.add_note{ margin-bottom:2px; }             /* add_note が2行連続した場合は、行間を狭めに */
+p.add_note + p.add_note{ margin-top:2px; }           /*       〃                                   */
+
+/* ---------------------------------------- */
+/* -- 以下は bank_type3.css のオリジナル -- */
+/* bk1-tp1 の33バンク版 */
+.bk3-tp1b tr:nth-child(1) th{  min-width: 6.5em; }
+.bk3-tp1b td:nth-last-child(3){ background-color: var(--total-col); }
+.bk3-tp1b td:nth-last-child(-n+2){ background-color: var(--part-col); }
+
+/* bk1-tp6 の33バンク版 */
+.bk3-tp6b td{ padding: 2px 6px; }
+.bk3-tp6b td span{ font-size:96%; }
+.bk3-tp6b tr:nth-last-child(3) td{ background-color: var(--obj1-col); }
+.bk3-tp6b tr:nth-child(7) td{ background-color: var(--obj1-col); }
+.bk3-tp6b tr:nth-last-child(-n+2) td{ background-color: var(--wide-col); }
+
+/* 33・500バンク用 bk1-tp4 への追加 */
+.bk3-tp4b tr:nth-last-child(3) td:nth-child(1){  background-color: var(--obj2-col); }
+.bk3-tp4b tr:nth-last-child(2) td:nth-child(1){  background-color: var(--wide-col); }
+
+/* 脚注のバンク長別のスジ車券率・力車券率 inlist への追加 */
+.inlist-add1 td:nth-child(1){ background-color: var(--parl-col); }
+.inlist-add1 tr:nth-child(5) td{ background-color: var(--wid2-col); }
+
+/* markerY 以外のアンダーライン */
+.xudlr1{  text-decoration: solid underline 1px red;   text-underline-offset: 0.2em; }   /* art37等をベースに新規 */
+.xudlr2{  text-decoration: solid underline 2px red;   text-underline-offset: 0.2em; }   /* 新規 */
+.xudlg1{  text-decoration: solid underline 1px green; text-underline-offset: 0.2em; }   /* 新規 */
+.xudlg2{  text-decoration: solid underline 2px green; text-underline-offset: 0.2em; }   /* 新規 */
+.xudlh1{  text-decoration: solid underline 1px #4d4d4d; text-underline-offset: 0.2em; } /* 新規 */
+.xudlh2{  text-decoration: solid underline 2px #4d4d4d; text-underline-offset: 0.2em; } /* 新規 */
+
+/* th等の背景色が暗い部分でも sup4 や リンク */
+a.white-text{ color:white; }
+.white-text{ color:white; }
