@@ -1,0 +1,851 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vw;
+    background: black;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1em;
+}
+
+.hamburger {
+    margin-top: 0.8vh;
+    width: 7.5vw;
+    height: 3vh;
+}
+
+.gamboo_logo {
+    cursor: pointer;
+    margin: 0.8vh;
+    height: 3vh;
+    width: auto;
+    align-items: center;
+}
+
+.menu_off {
+    margin-top: 10vw;
+    background: black;
+    position: fixed;
+    inset: 0;
+    opacity: 0%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.menu_on {
+    margin-top: 10vw;
+    background: black;
+    position: fixed;
+    inset: 0;
+    opacity: 100%;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.menu_on div {
+    margin-top: 25vw;
+    text-align: center;
+}
+
+.menu_on div a {
+    text-decoration: none;
+}
+
+.menu_on div p {
+    font-size: 8.5vw;
+    font-weight: bold;
+    margin: -3rem auto 6rem auto;
+    color: white;
+    max-width: 70vw;
+}
+
+.main_title_logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 10vw;
+    /*ヘッダー分*/
+}
+
+.main_title_logo img {
+    width: auto;
+    height: 25.5vw;
+}
+
+.wrapper {
+    padding-top: 30px;
+}
+
+.main_section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.to_other_articles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    font-size: 80%;
+}
+
+.main_section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.main_section hr {
+    width: 90vw;
+    border-top: 2px dashed black;
+}
+
+.general_image {
+    width: 85vw;
+    height: auto;
+}
+
+.title {
+    max-width: 85vw;
+    width: 85vw;
+    font-weight: bold;
+    font-size: 195%;
+    margin: 6.5vw auto;
+    line-height: 9.5vw;
+}
+
+.release_date {
+    font-size: 40%;
+    color: gray;
+    margin: auto 1vw;
+}
+
+.main_section p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    max-width: 90vw;
+    width: 90vw;
+}
+
+.underscore_1 {
+    background: yellow;
+    font-weight: bold;
+}
+
+.underscore_2 {
+    text-decoration: underline;
+}
+
+.annotation {
+    font-size: 70%;
+    vertical-align: 20%;
+    padding-left: 0.5vw;
+}
+
+.annotation_explanation {
+    max-width: 90vw;
+    width: 90vw;
+    height: auto;
+    margin: 1.5vh auto;
+    background: #eaece6;
+    text-align: justify;
+}
+
+.annotation_explanation p.first {
+    max-width: 85vw;
+    width: 85vw;
+    font-size: 70%;
+    margin: 1vh 1vw;
+    line-height: 2.5vh;
+}
+
+.annotation_explanation p {
+    max-width: 85vw;
+    width: 85vw;
+    font-size: calc(70% + 0.25vw);
+    margin: 1vh auto;
+    line-height: 2.5vh;
+}
+
+.outline {
+    max-width: 90vw;
+    width: 90vw;
+    font-weight: bold;
+    font-size: 175%;
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+
+.sub_outline {
+    max-width: 90vw;
+    width: 90vw;
+    font-weight: bold;
+    font-size: 115%;
+    margin-top: 0.5vw;
+    margin-bottom: -0.5vw;
+}
+
+.sub_outline_2 {
+    max-width: 90vw;
+    width: 90vw;
+    font-weight: bold;
+    font-size: 115%;
+    margin-top: 5vw;
+    margin-bottom: -0.5vw;
+}
+
+.main_back {
+    width: 90vw;
+    height: 75vw;
+    border-radius: 20px;
+    background: #dcb5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_image {
+    width: 80vw;
+    height: 45vw;
+    border-radius: 20px;
+    margin: 15px auto;
+}
+
+.button_align {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_button {
+    width: 85px;
+    height: 30px;
+    margin: 15px 1.5vw;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #000000 70%, #27296d 30%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 105%;
+    cursor: pointer;
+}
+
+/*博士画像と吹き出し周り*/
+.dr_tohyama_inserting {
+    display: flex;
+    margin: 5vw;
+}
+
+.dr_tohyama_general {
+    width: 75.15px;
+    height: 86.85px;
+    margin: 0.6vw;
+}
+
+.dr_tohyama_textbox {
+    background: white;
+    border: 2px solid;
+    max-width: 70vw;
+    width: 70vw;
+    height: auto;
+    border-radius: 1.5em;
+    margin: 0.6vw;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.dr_tohyama_textbox p {
+    text-align: left;
+    font-size: 3.5vw;
+    margin: 4.5vw 2.5vw;
+    line-height: 4.8vw;
+    max-width: 65vw;
+    width: 70vw;
+}
+
+/*
+.tohyama_list {
+  display: table;
+  list-style: square;
+  font-size: 3.5vw;
+  margin-left: -3.5vw;
+}
+
+.tohyama_list li{
+  align-content: center;
+  text-align:left;
+  margin:0.05em auto;
+  line-height:1.25em;
+  max-width:55vw;
+}
+*/
+
+.tohyama_list {
+    display: table;
+    list-style: square;
+    padding-inline: 2.5rem;
+    /*font-size: 0.9rem;*/
+    font-size: calc(65% + 1.2vw);
+}
+
+.tohyama_list li {
+    align-content: center;
+    text-align: justify;
+    /*margin:0.05em auto;*/
+    line-height: 1.05em;
+    max-width: 55vw;
+}
+
+.tohyama_list--summary {
+    font-weight: bold;
+}
+
+.tohyama_list--summary li {
+    padding-block: 10px;
+}
+
+/*表周り*/
+.table-wrap {
+    width: 90vw;
+    max-height: auto;
+    overflow-x: scroll;
+}
+
+/*SPのみ表にスクロールを使用したい際に使用*/
+.table-wrap_sp {
+    width: 90vw;
+    max-width: 90vw;
+    max-height: auto;
+    overflow-x: scroll;
+    scroll-margin: 0;
+    margin: 0.5rem auto;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 5vw;
+    white-space: nowrap;
+    font-size: 90%;
+}
+
+caption {
+    font-weight: bold;
+    margin: 0 0 1.5vw 1vw;
+    text-align: left;
+}
+
+th {
+    background-color: #eaece6;
+    font-weight: normal;
+}
+
+th,
+td {
+    white-space: nowrap;
+    text-align: center;
+    padding: 0.6vw 1vw;
+    border: 1px solid gray;
+}
+
+.article_end {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -25px;
+}
+
+.article_end div {
+    border: none;
+    border-radius: 10px;
+    background: black;
+    width: 65vw;
+    height: 15vw;
+    margin: 10vw;
+}
+
+.article_end div p {
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    margin: 3vw auto;
+}
+
+.article_end div a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.footer_section {
+    background: black;
+    text-align: center;
+    padding: 1em 3.5em;
+    bottom: 0;
+    margin-top: 1.5em;
+}
+
+.footer_section p {
+    font-weight: bold;
+    color: white;
+}
+
+.intro_data {
+    font-weight: bold;
+    text-align: left;
+}
+
+.intro_data p {
+    margin: 0 auto;
+}
+
+.intro_data p small {
+    margin-left: 0.5rem;
+    font-weight: normal;
+    font-size: 75%;
+}
+
+.trans_section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.trans_button {
+    display: center;
+    background: gray;
+    border-radius: 20px;
+    border: none;
+    margin: 0.5em;
+    width: 7em;
+    height: 3.5em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.trans_button:hover {
+    cursor: pointer;
+}
+
+.foot_note {
+    font-size: 85%;
+    margin-bottom: 3.5em;
+    text-align: justify;
+}
+
+.accordion_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion_off {
+    max-height: 40px;
+    overflow: hidden;
+    transition: 3.5s;
+}
+
+.accordion_on {
+    transition: 3.5s;
+}
+
+:root {
+    /* ---- 表(table)の色 ---- */
+    --th-col: #778ca3;
+    /* グレー */
+    --part-col: #e9faf9;
+    /* 薄い水色 */
+    --total-col: #cdf4f0;
+    /* 濃い水色 */
+    --wprt-col: #f9f8ea;
+    /* 薄い黄 */
+    --whole-col: #f7f3b7;
+    /* 濃い黄 */
+    --obj1-col: #caffbf;
+    /* 明るい緑 */
+    --obj2-col: #eaffe6;
+    /* 明るい緑(薄) */
+    --wide-col: #fdffbb;
+    /* 明るい黄色 */
+    --wid2-col: #feffe2;
+    /* 明るい黄色(薄) */
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 5px;
+    line-height: 1.3;
+}
+
+tr {
+    background-color: var(--part-col);
+    /* ベースは 薄い水色 */
+}
+
+tr.cgp {
+    background-color: var(--total-col);
+}
+
+/* 濃い水色 tp8で使用 */
+tr:last-child td {
+    border-bottom: solid 1px var(--th-col);
+    /* 表の下部はグレーの線 */
+}
+
+th {
+    white-space: nowrap;
+    padding: 4px;
+    text-align: center;
+    border: solid 1px #ffffff;
+    background-color: var(--th-col);
+    color: #ffffff;
+    font-weight: normal;
+}
+
+td {
+    white-space: nowrap;
+    padding: 4px;
+    text-align: center;
+    border: solid 1px #ffffff;
+}
+
+table caption {
+    font-weight: bold;
+    margin: 0 0 2px 3px;
+    text-align: left;
+}
+
+table caption span {
+    font-weight: normal;
+    font-size: 86%;
+}
+
+.table_add {
+    font-size: 75%;
+    margin-top: -0.5em;
+}
+
+.table_add_35_6 {
+    font-size: 75% !important;
+    margin-top: -0.5em;
+}
+
+.note {
+    font-size: 10% !important;
+    vertical-align: top;
+}
+
+table.bk1-tp1 tr:nth-child(1) th {
+    min-width: 6.5em;
+}
+
+.bk1-tp1 th span {
+    font-size: 96%;
+}
+
+.bk1-tp1 td:nth-last-child(2) {
+    background-color: var(--total-col);
+}
+
+.bk1-tp1 td:nth-last-child(1) {
+    background-color: var(--part-col);
+}
+
+table.bk1-tp2 th {
+    min-width: 4em;
+}
+
+.bk1-tp2 th span {
+    font-size: 96%;
+}
+
+.bk1-tp2 tr:nth-last-child(2) td {
+    background-color: var(--total-col);
+}
+
+.bk1-tp2 tr:nth-last-child(1) td {
+    background-color: var(--part-col);
+}
+
+table+p {
+    margin-top: 18px;
+}
+
+table+p.add_note {
+    margin-top: 0px;
+}
+
+.clsn {
+    font-size: 96%;
+    background-color: var(--obj2-col);
+}
+
+table.bk1-tp3 th {
+    min-width: 3em;
+}
+
+.bk1-tp3 tr:nth-child(-n+2) th span {
+    font-size: 86%;
+}
+
+.bk1-tp3 th.detail {
+    font-size: 86%;
+    line-height: 0.95;
+    padding-top: 3px;
+}
+
+.bk1-tp3 tr:nth-last-child(2) {
+    background-color: var(--obj1-col);
+}
+
+/* 黄緑 */
+.bk1-tp3 tr:nth-last-child(1) {
+    background-color: var(--wide-col);
+}
+
+/* 黄 */
+.bk1-tp3 tr:nth-last-child(2) td:nth-child(n+3):nth-child(-n+6) {
+    background-color: var(--obj2-col);
+}
+
+/* 薄い黄緑 */
+.bk1-tp3 tr:nth-last-child(1) td:nth-child(n+3):nth-child(-n+6) {
+    background-color: var(--wid2-col);
+}
+
+/* 薄い 黄  */
+
+.bk1-tp4 tr:nth-last-child(2) td:nth-child(1) {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp4 tr:nth-last-child(1) td:nth-child(1) {
+    background-color: var(--wide-col);
+}
+
+.bk1-tp4 th:nth-child(1) {
+    width: 200px;
+}
+
+.bk1-tp4 th:nth-child(2) {
+    width: 300px;
+}
+
+.bk1-tp4 td:last-child span {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 72%;
+    line-height: 1.05;
+    height: 2.3em;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    vertical-align: middle;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.bk1-tp4 td:last-child span:last-child {
+    border-right: 1px solid black;
+}
+
+.bk1-tp4 td span.ngc {
+    background-color: #a0c4ff;
+}
+
+.bk1-tp4 td span.mkc {
+    background-color: #ffadad;
+}
+
+.bk1-tp4 td span.ssc {
+    background-color: #ffd6a5;
+}
+
+.bk1-tp4 td span.kkc {
+    background-color: #caffbf;
+}
+
+.bk1-tp4 td span.ccc {
+    background-color: #ffffff;
+}
+
+.bk1-tp4 td:nth-child(n+2) {
+    padding: 2px;
+}
+
+
+table.bk1-tp5 th {
+    min-width: 4.2em;
+}
+
+.bk1-tp5 th span {
+    font-size: 96%;
+}
+
+.bk1-tp5 th {
+    line-height: 1.2;
+}
+
+.bk1-tp5 tr:nth-last-child(2) {
+    background-color: var(--obj2-col);
+}
+
+/* 薄い黄緑 */
+.bk1-tp5 tr:nth-last-child(1) {
+    background-color: var(--wid2-col);
+}
+
+/* 薄い黄 */
+.bk1-tp5 tr:nth-last-child(2) td:nth-child(-n+2) {
+    background-color: var(--obj1-col);
+}
+
+/* 黄緑 */
+.bk1-tp5 tr:nth-last-child(1) td:nth-child(-n+2) {
+    background-color: var(--wide-col);
+}
+
+/*  黄  */
+
+.bk1-tp10 {
+    width: 400px;
+}
+
+.bk1-tp6 td {
+    padding: 2px 6px;
+}
+
+td.bkname {
+    width: 1.2em;
+}
+
+.bk1-tp6 td span {
+    font-size: 96%;
+}
+
+.bkname {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp6 tr:nth-last-child(2) td {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp6 tr:last-child td {
+    background-color: var(--wide-col);
+}
+
+table.inlist {
+    padding: 0;
+}
+
+table.inlist th,
+table.inlist td {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 3px;
+    text-align: center;
+    border: solid 1px gray;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.1;
+    min-width: 4em;
+    font-size: 95%;
+}
+
+table.inlist th {
+    background-color: #eaece6;
+}
+
+table.tbl-average {
+    display: flex;
+    justify-content: center;
+}
+
+table.tbl-average {
+    display: flex;
+    justify-content: center;
+    font-size: 78%;
+}
+
+table.tbl-average th {
+    background-color: #778ca3;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+table.tbl-average td {
+    background-color: #ffffff;
+    color: #000;
+    font-weight: normal;
+}
+
+table.tbl-average th,
+table.tbl-average td {
+    white-space: nowrap;
+    text-align: center;
+    padding: 2px 6px;
+    border: solid 1.5px #000000;
+}
+
+.trans_section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer_button {
+    display: center;
+    font-size: 40%;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    margin: 0.5em;
+    width: auto;
+    height: 3em;
+    padding: 1px 4.5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer_button a {
+    text-decoration: none;
+    color: white;
+}
+
+.to_footer {
+    text-decoration: underline;
+    font-weight: normal;
+}
