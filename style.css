@@ -1,0 +1,752 @@
+/* -------------------- */
+/* --- Base Styles & Mobile First (SP) --- */
+/* -------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vw;
+    background: black;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.header.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 1em;
+}
+
+.gamboo_logo {
+    cursor: pointer;
+    height: 3vh;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.gamboo_logo:hover {
+    transform: scale(1.05);
+}
+
+/* --- Animated Hamburger Menu --- */
+.hamburger {
+    margin-top: 0;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 18px;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    left: -30px;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
+}
+
+
+.menu_off {
+    margin-top: 10vw;
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    height: 100vh;
+    transform: translateY(-100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.menu_on {
+    margin-top: 10vw;
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    inset: 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.menu_on div, .menu_off div {
+    margin-top: 25vw;
+    text-align: center;
+}
+
+.menu_on div a, .menu_off div a {
+    text-decoration: none;
+}
+
+.menu_on div p, .menu_off div p {
+    font-size: 8.5vw;
+    font-weight: bold;
+    margin: -3rem auto 6rem auto;
+    color: white;
+    max-width: 70vw;
+    transition: color 0.2s ease;
+}
+
+.menu_on div p:hover {
+    color: #ffd700;
+    /* Gold hover effect */
+}
+
+
+.wrapper {
+    padding-top: 30px;
+    margin-top: 10vw;
+}
+
+.main_section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.main_section hr {
+    width: 90vw;
+    border: 0;
+    border-top: 2px dashed #333;
+}
+
+.title {
+    max-width: 85vw;
+    width: 85vw;
+    font-weight: bold;
+    font-size: 195%;
+    margin: 1vw;
+    line-height: 1vw;
+}
+
+.release_date {
+    font-size: 40%;
+    color: gray;
+    margin: auto 1vw;
+}
+
+.main_section p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    max-width: 90vw;
+    width: 90vw;
+}
+
+/* --- Doctor Tohyama Section --- */
+.dr_tohyama_inserting {
+    display: flex;
+    margin: 5vw;
+    width: 90vw;
+}
+
+.dr_tohyama_general {
+    width: 75.15px;
+    height: 86.85px;
+    margin: 0.6vw;
+    flex-shrink: 0;
+}
+
+.dr_tohyama_textbox {
+    background: white;
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    border-radius: 1.5em;
+    margin: 0.6vw;
+    padding: 2px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dr_tohyama_textbox p {
+    text-align: left;
+    font-size: 3.5vw;
+    margin: 4.5vw 2.5vw;
+    line-height: 4.8vw;
+    width: auto;
+    max-width: none;
+}
+
+.tohyama_list {
+    display: table;
+    list-style: square;
+    padding-inline-start: 2.5rem;
+    font-size: calc(65% + 1.2vw);
+}
+
+.tohyama_list li {
+    text-align: justify;
+    line-height: 1.25em;
+    max-width: 55vw;
+}
+
+.tohyama_list--summary {
+    font-weight: bold;
+}
+
+.tohyama_list--summary li {
+    padding-block: 10px;
+}
+
+
+/* --- Responsive Tables --- */
+.table-wrap {
+    width: 90vw;
+    max-width: 90vw;
+    overflow-x: auto;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* For Webkit browsers like Chrome, Safari */
+.table-wrap::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-wrap::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+table {
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-size: 90%;
+    width: 100%;
+    /* Make table fill the wrapper */
+    margin: 0;
+    /* Remove default margin */
+}
+
+caption {
+    font-weight: bold;
+    margin: 0 0 1.5vw 1vw;
+    text-align: left;
+    padding: 8px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 0.6vw 1vw;
+    border: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+.article_end {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.article_end div {
+    border: none;
+    border-radius: 10px;
+    background: black;
+    width: 65vw;
+    height: 15vw;
+    margin: 10vw;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article_end div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.article_end div p {
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    margin: 3vw auto;
+}
+
+.article_end div a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.footer_section {
+    background: black;
+    text-align: center;
+    padding: 1em 3.5em;
+    bottom: 0;
+    margin-top: 1.5em;
+}
+
+.footer_section p {
+    font-weight: bold;
+    color: white;
+}
+
+.trans_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.trans_button {
+    background: gray;
+    border-radius: 20px;
+    border: none;
+    width: auto;
+    padding: 0 1.5em;
+    height: 3.5em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.trans_button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.footer_button {
+    font-size: 40%;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    margin: 0.5em;
+    width: auto;
+    height: 3em;
+    padding: 1px 4.5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.footer_button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+.footer_button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --- Table Colors (from bank_type1b.css) --- */
+:root {
+    --th-col: #778ca3;
+    --part-col: #e9faf9;
+    --total-col: #cdf4f0;
+    --wprt-col: #f9f8ea;
+    --whole-col: #f7f3b7;
+    --obj1-col: #caffbf;
+    --obj2-col: #eaffe6;
+    --wide-col: #fdffbb;
+    --wid2-col: #feffe2;
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+tr {
+    background-color: var(--part-col);
+}
+
+tr.cgp {
+    background-color: var(--total-col);
+}
+
+tr:last-child td {
+    border-bottom: solid 1px var(--th-col);
+}
+
+th {
+    padding: 4px;
+    border: solid 1px #ffffff;
+    background-color: var(--th-col);
+    color: #ffffff;
+    font-weight: normal;
+}
+
+td {
+    padding: 4px;
+    border: solid 1px #ffffff;
+}
+
+table caption span {
+    font-weight: normal;
+    font-size: 86%;
+}
+
+.table_add,
+.table_add_35_6 {
+    font-size: 75%;
+    margin-top: -0.5em;
+}
+
+/* Table Specific Styles */
+.bk1-tp1 td:nth-last-child(2) {
+    background-color: var(--total-col);
+}
+
+.bk1-tp1 td:nth-last-child(1) {
+    background-color: var(--part-col);
+}
+
+.bk1-tp2 tr:nth-last-child(2) td {
+    background-color: var(--total-col);
+}
+
+.bk1-tp2 tr:nth-last-child(1) td {
+    background-color: var(--part-col);
+}
+
+.clsn {
+    font-size: 96%;
+    background-color: var(--obj2-col);
+}
+
+.bkname {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp3 tr:nth-last-child(2) {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp3 tr:nth-last-child(1) {
+    background-color: var(--wide-col);
+}
+
+.bk1-tp3 tr:nth-last-child(2) td:nth-child(n+3):nth-child(-n+6) {
+    background-color: var(--obj2-col);
+}
+
+.bk1-tp3 tr:nth-last-child(1) td:nth-child(n+3):nth-child(-n+6) {
+    background-color: var(--wid2-col);
+}
+
+.bk1-tp4 tr:nth-last-child(2) td:nth-child(1) {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp4 tr:nth-last-child(1) td:nth-child(1) {
+    background-color: var(--wide-col);
+}
+
+.bk1-tp4 td:last-child span {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 72%;
+    line-height: 1.05;
+    height: 2.3em;
+    padding-top: 1px;
+    vertical-align: middle;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.bk1-tp4 td:last-child span:last-child {
+    border-right: 1px solid black;
+}
+
+.bk1-tp4 td span.ngc {
+    background-color: #a0c4ff;
+}
+
+.bk1-tp4 td span.mkc {
+    background-color: #ffadad;
+}
+
+.bk1-tp4 td span.ssc {
+    background-color: #ffd6a5;
+}
+
+.bk1-tp4 td span.kkc {
+    background-color: #caffbf;
+}
+
+.bk1-tp4 td span.ccc {
+    background-color: #ffffff;
+}
+
+.bk1-tp5 tr:nth-last-child(2) {
+    background-color: var(--obj2-col);
+}
+
+.bk1-tp5 tr:nth-last-child(1) {
+    background-color: var(--wid2-col);
+}
+
+.bk1-tp5 tr:nth-last-child(2) td:nth-child(-n+2) {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp5 tr:nth-last-child(1) td:nth-child(-n+2) {
+    background-color: var(--wide-col);
+}
+
+.bk1-tp6 tr:nth-last-child(2) td {
+    background-color: var(--obj1-col);
+}
+
+.bk1-tp6 tr:last-child td {
+    background-color: var(--wide-col);
+}
+
+/* --- Scroll Animations --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* -------------------- */
+/* --- PC Styles --- */
+/* -------------------- */
+@media screen and (min-width: 769px) {
+    .body_background {
+        background-image: linear-gradient(0deg, transparent calc(100% - 1px), #a9a9a9 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #a9a9a9 calc(100% - 1px));
+        background-size: 25px 25px;
+        background-repeat: repeat;
+        background-position: center center;
+    }
+
+    .header {
+        height: 3em;
+    }
+
+    .header.menu-is-open {
+        background: black !important;
+    }
+
+    .gamboo_logo {
+        height: 2.0em;
+    }
+
+    .hamburger {
+        margin: 0;
+        width: 35px;
+        height: 25px;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0px;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 11px;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 22px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 11px;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: 11px;
+    }
+
+
+    .menu_on,
+    .menu_off {
+        margin-top: 3em;
+    }
+
+    .menu_on div, .menu_off div {
+        margin-top: 10em;
+    }
+
+    .menu_on div p, .menu_off div p {
+        font-size: 150%;
+        line-height: 1.5em;
+    }
+
+    .wrapper {
+        background: white;
+        max-width: 60em;
+        height: auto;
+        margin: 0 auto;
+        padding: 7.5em 2em;
+        margin-top: 3em;
+        /* Header height */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .main_section hr {
+        width: 45em;
+    }
+
+    .title {
+        max-width: 23em;
+        width: auto;
+        font-size: 200%;
+        margin-top: 1em;
+    }
+
+    .main_section p {
+        max-width: 45em;
+        width: 45em;
+    }
+
+    .dr_tohyama_inserting {
+        margin: 1rem auto;
+        width: auto;
+        justify-content: center;
+    }
+
+    .dr_tohyama_general {
+        width: auto;
+        height: 8.5em;
+        margin: 0.6em;
+    }
+
+    .dr_tohyama_textbox {
+        max-width: 35em;
+        width: 35em;
+    }
+
+    .dr_tohyama_textbox p {
+        font-size: 1em;
+        margin: 1.5em auto;
+        line-height: 1.3em;
+        max-width: 33.5em;
+    }
+
+    .tohyama_list {
+        font-size: 1em;
+    }
+
+    .tohyama_list li {
+        max-width: 30.5em;
+    }
+
+
+    /* PC table doesn't need to scroll */
+    .table-wrap {
+        width: auto;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 1rem auto;
+        border: none;
+    }
+
+    table {
+        margin: 1rem auto;
+    }
+
+    .article_end div {
+        width: 16.5em;
+        height: 3.5em;
+    }
+
+    .article_end div p {
+        font-size: 1.5em;
+        margin: 0.5em auto;
+    }
+
+    .trans_button {
+        width: 7em;
+    }
+}
+
+/* --- Table Content Animation --- */
+.table-content-item {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.table-content-item.fading-out {
+    opacity: 0;
+}

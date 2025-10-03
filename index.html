@@ -1,4 +1,5 @@
-<html lang="ja" encoding="UTF-8">
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,8 +15,7 @@
     <link rel="shortcut icon" href="/images/Gamboo_favicon.ico">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/tohyama_bank_sp.css">
-    <link rel="stylesheet" media="screen and (min-width:769px)" href="./css/tohyama_bank_pc.css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
             MathJax.Hub.Config({
@@ -57,52 +57,53 @@
                             style="text-decoration:underline;font-weight:normal">2022年1月～2024年12月</span>、"直近10年のGP･GI･GII開催"が<span
                             style="text-decoration:underline;font-weight:normal">2015年1月～2025年9月</span></p>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
         <section class="main_section">
             <h2 class="outline">1. バンクデータ</h2>
             <hr>
-            <table class="bk1-tp1">
-                <tr>
-                    <th colspan="2">項目</th>
-                    <th>福井競輪場</th>
-                    <th><span>400バンク平均</span></th>
-                </tr>
-                <tr>
-                    <th colspan="2">周長</th>
-                    <td>400m</td>
-                    <td>400m</td>
-                </tr>
-                <tr>
-                    <th colspan="2">みなし直線</th>
-                    <td>52.8m</td>
-                    <td>56.2m</td>
-                </tr>
-                <tr>
-                    <th colspan="2">カント</th>
-                    <td>31.48°</td>
-                    <td>32.0°</td>
-                </tr>
-                <tr>
-                    <th rowspan="3">幅<br>員</th>
-                    <th>ホーム</th>
-                    <td>10.5m</td>
-                    <td>10.5m</td>
-                </tr>
-                <tr>
-                    <th>バック</th>
-                    <td>9.0m</td>
-                    <td>9.4m</td>
-                </tr>
-                <tr>
-                    <th>センター</th>
-                    <td>7.5m</td>
-                    <td>7.7m</td>
-                </tr>
-            </table>
-
+            <div class="table-wrap">
+                <table class="bk1-tp1">
+                    <tr>
+                        <th colspan="2">項目</th>
+                        <th>福井競輪場</th>
+                        <th><span>400バンク平均</span></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">周長</th>
+                        <td>400m</td>
+                        <td>400m</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">みなし直線</th>
+                        <td>52.8m</td>
+                        <td>56.2m</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">カント</th>
+                        <td>31.48°</td>
+                        <td>32.0°</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">幅<br>員</th>
+                        <th>ホーム</th>
+                        <td>10.5m</td>
+                        <td>10.5m</td>
+                    </tr>
+                    <tr>
+                        <th>バック</th>
+                        <td>9.0m</td>
+                        <td>9.4m</td>
+                    </tr>
+                    <tr>
+                        <th>センター</th>
+                        <td>7.5m</td>
+                        <td>7.7m</td>
+                    </tr>
+                </table>
+            </div>
             <section class="dr_tohyama_inserting">
                 <div class="dr_tohyama_textbox">
                     <p><span style="background:yellow">みなし直線はやや短く、カントはやや緩めじゃ。</span></p>
@@ -112,14 +113,13 @@
                     <p><small>※現在休止中で、リニューアル後は33バンクへ変更となる向日町競輪場を除いた31場</small></p>
                     <p>なお、2025年10月から約1年かけて、<span style="background:yellow">37年ぶりのバンク張り替え工事</span>が予定されているぞ！</p>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
         <section class="main_section">
             <h2 class="outline">2. 開催データ</h2>
             <hr>
-            <p><b>！ボタンをタップ(クリック)で表示の切替が可能です</b></p>
             <div class="trans_section" name="section_1">
                 <button class="trans_button" id="button_1" style="background:black;">時間帯別</button>
                 <button class="trans_button" id="button_2">クラス別</button>
@@ -127,7 +127,7 @@
             </div>
             <section name="section_1">
                 <section>
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp2">
                             <caption>時間帯別の開催日数比率 <span>（2022年～2024年）</span></caption>
                             <tr>
@@ -158,7 +158,7 @@
                     </div>
                 </section>
                 <section style="display:none;">
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp2">
                             <caption>クラス別のレース数比率 <span>（2022年～2024年）</span></caption>
                             <tr>
@@ -189,7 +189,7 @@
                     </div>
                 </section>
                 <section style="display:none;">
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp8">
                             <caption>直近10年のGP･GI･GII開催 <span>（2015年1月～2025年9月）</span></caption>
                             <tr>
@@ -227,7 +227,7 @@
                         <p>また今年（2025年）9月には、「第41回共同通信社杯(GII)」が開催予定じゃ。福井競輪場での共同通信社開催は2013年4月以来で、2度目となるぞ。</p>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
@@ -240,7 +240,7 @@
             </div>
             <section name="section_2">
                 <section>
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp3">
                             <caption>雨レース率 <span>（2020年10月～2025年5月）</span></caption>
                             <tr>
@@ -277,7 +277,7 @@
                     </div>
                 </section>
                 <section style="display:none;">
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp3">
                             <caption>風レース率 <span>（2020年10月～2025年5月）</span></caption>
                             <tr>
@@ -332,7 +332,7 @@
                         <p>福井市では春から夏にかけては南寄りの風（ホーム向かい風）、秋になると北寄りの風（ホーム追い風）となることが多いようじゃ。</p>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
@@ -344,7 +344,7 @@
                 <button class="trans_button" id="button_2">2着</button>
                 <button class="trans_button" id="button_3">1・2着</button>
             </div>
-            <div class="table-wrap_sp" name="section_3">
+            <div class="table-wrap" name="section_3">
                 <table class="bk1-tp4"> <!-- xdt51_kmt -->
                     <caption>決まり手比率 <span>（2020年10月～2025年5月）</span></caption>
                     <tr>
@@ -547,7 +547,7 @@
                         </p>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
             <div class="annotation_explanation">
                 <p class="first"><b>【memo】</b></p>
@@ -566,7 +566,7 @@
 
             <section name="section_4">
                 <section>
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp10">
                             <caption>最高上がりタイム</caption>
                             <tr>
@@ -583,7 +583,7 @@
                     </div>
                 </section>
                 <section style="display:none;">
-                    <div class="table-wrap_sp">
+                    <div class="table-wrap">
                         <table class="bk1-tp5"> <!-- xdt11_11 -->
                             <caption>平均上がりタイム <span>（2020年10月～2025年5月）</span></caption>
                             <tr>
@@ -634,7 +634,7 @@
                         </p>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
@@ -646,7 +646,7 @@
                 <button class="trans_button" id="button_2">3連単</button>
             </div>
 
-            <div class="table-wrap_sp" name="section_5">
+            <div class="table-wrap" name="section_5">
                 <table class="bk1-tp6"> <!-- xdt51_6 -->
                     <caption>2車単の配当額・人気車券比率・万車券比率 <span>（2020年10月～2025年5月）</span></caption>
                     <tr>
@@ -847,57 +847,59 @@
                         </p>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
         <section class="main_section" id="class_average4_">
             <h2 class="outline">7. スジ車券率と力車券率</h2>
             <hr>
-            <table class="bk1-tp6 colptn35-2"> <!-- xdt51_8 -->
-                <caption>スジ車券率と力車券率 <span>（2020年10月～2025年5月）</span></caption>
-                <tr>
-                    <th colspan="2">競輪場<br><span>クラス・車立て</span></th>
-                    <th>スジ車券率<span class="sup3">※</span></th>
-                    <th>力車券率<span class="sup3">※</span></th>
-                </tr>
-                <tr>
-                    <td rowspan="6" class="bkname">福<br>井</td>
-                    <td><span>S級戦・9車立て</span></td>
-                    <td>46.6%</td>
-                    <td>20.6%</td>
-                </tr>
-                <tr>
-                    <td><span>S級戦・7車立て</span></td>
-                    <td>52.4%</td>
-                    <td>22.1%</td>
-                </tr>
-                <tr>
-                    <td><span>A12班戦・7車立て</span></td>
-                    <td>54.5%</td>
-                    <td>26.4%</td>
-                </tr>
-                <tr>
-                    <td><span>チャレンジ・7車立て</span></td>
-                    <td>52.7%</td>
-                    <td>37.6%</td>
-                </tr>
-                <tr>
-                    <td><span>ガールズ・7車立て</span></td>
-                    <td>--</td>
-                    <td>39.4%</td>
-                </tr>
-                <tr>
-                    <td><a href="#class_average" class="to_footer">クラス平均値</a></td>
-                    <td>52.9%</td>
-                    <td>28.3%</td>
-                </tr>
-                <tr>
-                    <td colspan="2">全場平均</td>
-                    <td>53.4%</td>
-                    <td>27.1%</td>
-                </tr>
-            </table>
+            <div class="table-wrap">
+                <table class="bk1-tp6 colptn35-2"> <!-- xdt51_8 -->
+                    <caption>スジ車券率と力車券率 <span>（2020年10月～2025年5月）</span></caption>
+                    <tr>
+                        <th colspan="2">競輪場<br><span>クラス・車立て</span></th>
+                        <th>スジ車券率<span class="sup3">※</span></th>
+                        <th>力車券率<span class="sup3">※</span></th>
+                    </tr>
+                    <tr>
+                        <td rowspan="6" class="bkname">福<br>井</td>
+                        <td><span>S級戦・9車立て</span></td>
+                        <td>46.6%</td>
+                        <td>20.6%</td>
+                    </tr>
+                    <tr>
+                        <td><span>S級戦・7車立て</span></td>
+                        <td>52.4%</td>
+                        <td>22.1%</td>
+                    </tr>
+                    <tr>
+                        <td><span>A12班戦・7車立て</span></td>
+                        <td>54.5%</td>
+                        <td>26.4%</td>
+                    </tr>
+                    <tr>
+                        <td><span>チャレンジ・7車立て</span></td>
+                        <td>52.7%</td>
+                        <td>37.6%</td>
+                    </tr>
+                    <tr>
+                        <td><span>ガールズ・7車立て</span></td>
+                        <td>--</td>
+                        <td>39.4%</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#class_average" class="to_footer">クラス平均値</a></td>
+                        <td>52.9%</td>
+                        <td>28.3%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">全場平均</td>
+                        <td>53.4%</td>
+                        <td>27.1%</td>
+                    </tr>
+                </table>
+            </div>
 
             <div class="table_add">
                 <p>※スジ車券率：並び予想で前後に並んだ選手で1⇔2着となったレースの比率。<br>※力車券率：脚力上位の2人（G指数が上位の2人）で1⇔2着となったレースの比率。</p>
@@ -916,7 +918,7 @@
                         <p>福井競輪場は<span style="background:yellow">力車券が決まりやすい傾向にある</span>ようじゃ。</p>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
@@ -928,7 +930,7 @@
                 <button class="trans_button" id="button_2">2着選手</button>
             </div>
 
-            <div class="table-wrap_sp" name="section_6">
+            <div class="table-wrap" name="section_6">
                 <table class="bk1-tp6 colptn35-3"> <!-- xdt51_9 -->
                     <caption>1着選手の予想並び上の位置 <span>（2020年10月～2025年5月）</span></caption>
                     <tr>
@@ -976,7 +978,7 @@
                         <td>7.2%</td>
                     </tr>
                     <tr>
-                        <td><a href="#class_average4" class="to_footer">クラス平均値</a></td>
+                        <td><a href="#class_average" class="to_footer">クラス平均値</a></td>
                         <td>58.7%</td>
                         <td>34.7%</td>
                         <td>2.6%</td>
@@ -1040,7 +1042,7 @@
                         <td>8.5%</td>
                     </tr>
                     <tr>
-                        <td><a href="#class_average4" class="to_footer">クラス平均値</a></td>
+                        <td><a href="#class_average" class="to_footer">クラス平均値</a></td>
                         <td>39.1%</td>
                         <td>46.8%</td>
                         <td>8.7%</td>
@@ -1079,7 +1081,7 @@
                         </ul>
                     </div>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
@@ -1104,7 +1106,7 @@
                     <br>
                     <p>...以上が、福井競輪場の特徴じゃ！</p>
                 </div>
-                <img src="/images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
+                <img src="./images/tohyama/tohyama_article_2024/doctor.png" class="dr_tohyama_general"></img>
             </section>
         </section>
 
@@ -1119,24 +1121,26 @@
                         href="#class_average4_">スジ車券率力車券率</a></button><button class="footer_button"
                     id="class_average5"><a href="#class_average5_">1着2着選手ライン位置</a></button></div>
             <p>クラス平均値は、次の比率で加重平均を取った値。</p>
-            <table class="tbl-average">
-                <tr>
-                    <th>クラス</th>
-                    <td>S級戦<br>9車立</td>
-                    <td>S級戦<br>7車立</td>
-                    <td>A12班戦<br>7車立</td>
-                    <td class="challenge">チャレンジ<br>7車立</td>
-                    <td>ガールズ<br>7車立</td>
-                </tr>
-                <tr>
-                    <th>比率</th>
-                    <td>8.6</td>
-                    <td>19.5</td>
-                    <td>44.4</td>
-                    <td>20.5</td>
-                    <td>7.0</td>
-                </tr>
-            </table>
+            <div class="table-wrap">
+                <table class="tbl-average">
+                    <tr>
+                        <th>クラス</th>
+                        <td>S級戦<br>9車立</td>
+                        <td>S級戦<br>7車立</td>
+                        <td>A12班戦<br>7車立</td>
+                        <td class="challenge">チャレンジ<br>7車立</td>
+                        <td>ガールズ<br>7車立</td>
+                    </tr>
+                    <tr>
+                        <th>比率</th>
+                        <td>8.6</td>
+                        <td>19.5</td>
+                        <td>44.4</td>
+                        <td>20.5</td>
+                        <td>7.0</td>
+                    </tr>
+                </table>
+            </div>
             <p>この比率は、集計期間（2020年10月～2025年5月）に全競輪場で行われたレース数の比率である。</p>
             <p>個々の競輪場のレース比率はこの値とは違うのだが、公平な比較とするために、全競輪場でこの比率で加重平均した値をその競輪場のクラス平均値（代表値）としている。</p>
             <hr>
@@ -1159,36 +1163,7 @@
         <p>Copyright © NIPPON TOTOR CO.,LTD. All Rights Reserved.</p>
     </footer>
 
-    <script src="./js/common_header.js"></script>
-
-    <script>
-
-        mytrans = function () {
-            for (let mynum = 1; mynum < 7; mynum++) {
-                let mysection = document.querySelectorAll(`[name^='section_` + mynum + `']`);
-                let mybutton = mysection[0].children;
-                let mycontent = mysection[1].children;
-                let mytext = mysection[2].children;
-
-                mybutton = Array.from(mybutton);
-                mycontent = Array.from(mycontent);
-                mytext = Array.from(mytext);
-
-                for (let i = 0; i < mybutton.length; i++) {
-                    mybutton[i].addEventListener("click", () => {
-                        mybutton.map((x) => x.style.background = "gray");
-                        mycontent.map((x) => x.style.display = "none");
-                        mytext.map((x) => x.style.display = "none");
-
-                        setTimeout(() => { mybutton[i].style.background = "black"; mycontent[i].style.display = ""; mytext[i].style.display = ""; }, 10);
-                    }, false);
-                }
-            }
-        }
-
-        mytrans();
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
