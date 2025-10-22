@@ -1,816 +1,869 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .body_background {
-    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #a9a9a9 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #a9a9a9 calc(100% - 1px));
-    background-size: 25px 25px;
-    background-repeat: repeat;
-    background-position: center center;
+  background-image: linear-gradient(
+      0deg,
+      transparent calc(100% - 1px),
+      #a9a9a9 calc(100% - 1px)
+    ),
+    linear-gradient(
+      90deg,
+      transparent calc(100% - 1px),
+      #a9a9a9 calc(100% - 1px)
+    );
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  background-position: center center;
 }
 
 .header {
-    display: grid;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3em;
-    background: black;
-    z-index: 3;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background: black;
+  z-index: 3;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    margin: auto 1em;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 1em;
 }
 
 .hamburger {
-    margin: 0.25em;
-    width: 2.5em;
-    height: auto;
-    cursor: pointer;
+  margin: 0.25em;
+  width: 2.5em;
+  height: auto;
+  cursor: pointer;
 }
 
 .gamboo_logo {
-    cursor: pointer;
-    margin: 0.4em;
-    height: 2.0em;
-    width: auto;
+  cursor: pointer;
+  margin: 0.4em;
+  height: 2em;
+  width: auto;
 }
 
 .menu_off {
-    margin-top: 10vw;
-    background: black;
-    position: fixed;
-    inset: 0;
-    opacity: 0%;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
+  margin-top: 10vw;
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 0%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .menu_on {
-    background: black;
-    position: fixed;
-    inset: 0;
-    opacity: 100%;
-    transition: 0.3s;
-    z-index: 2;
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 100%;
+  transition: 0.3s;
+  z-index: 2;
 }
 
 .menu_on div {
-    margin-top: 10em;
-    text-align: center;
+  margin-top: 10em;
+  text-align: center;
 }
 
 .menu_on div a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu_on div p {
-    font-size: 150%;
-    font-weight: bold;
-    line-height: 1.5em;
-    color: white;
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: white;
 }
-
 
 .main_title_logo img {
-    width: auto;
-    height: 25.5vw;
+  width: auto;
+  height: 25.5vw;
 }
 
-
 .wrapper {
-    background: white;
-    max-width: 60em;
-    height: auto;
-    margin: -3.5em auto;
-    padding-top: 7.5em;
-    padding-bottom: 7.5em;
+  background: white;
+  max-width: 60em;
+  height: auto;
+  margin: -3.5em auto;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
 }
 
 .main_section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
 }
 
 .to_other_articles {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    text-align: left;
-    margin: 0 -3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  margin: 0 -3rem;
 }
 
 .margin_adjustment {
-    margin: 0.5em auto;
+  margin: 0.5em auto;
 }
 
 .main_section hr {
-    width: 45em;
-    border-top: 2px dashed black;
+  width: 45em;
+  border-top: 2px dashed black;
 }
 
 .general_image {
-    width: 30em;
-    height: auto;
+  width: 30em;
+  height: auto;
 }
 
 .title {
-    max-width: 23em;
-    width: 23em;
-    font-weight: bold;
-    font-size: 200%;
-    margin: auto;
-    margin-top: 1em;
+  max-width: 23em;
+  width: 23em;
+  font-weight: bold;
+  font-size: 200%;
+  margin: auto;
+  margin-top: 1em;
 }
 
 .release_date {
-    font-size: 50%;
-    color: gray;
-    margin: auto 1em;
+  font-size: 50%;
+  color: gray;
+  margin: auto 1em;
 }
-
 .main_section p {
-    margin: 1em auto;
-    max-width: 45em;
-    width: 45em;
+  margin: 1em auto;
+  max-width: 45em;
+  width: 45em;
 }
 
 .underscore_1 {
-    background: yellow;
-    font-weight: bold;
+  background: yellow;
+  font-weight: bold;
 }
 
 .underscore_2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .annotation {
-    font-size: 70%;
-    vertical-align: 20%;
-    padding-left: 0.2vw;
+  font-size: 70%;
+  vertical-align: 20%;
+  padding-left: 0.2vw;
 }
 
 .annotation_explanation {
-    max-width: 45em;
-    width: 45em;
-    height: auto;
-    margin: 0.5em auto;
-    background: #eaece6;
+  max-width: 45em;
+  width: 45em;
+  height: auto;
+  margin: 0.5em auto;
+  background: #eaece6;
 }
 
 .annotation_explanation p.first {
-    max-width: 60em;
-    width: 60em;
-    font-size: 70%;
-    margin: 0.5em 0.5em;
-    line-height: 1.5em;
+  max-width: 60em;
+  width: 60em;
+  font-size: 70%;
+  margin: 0.5em 0.5em;
+  line-height: 1.5em;
 }
 
 .annotation_explanation p {
-    max-width: 60em;
-    width: 60em;
-    font-size: 70%;
-    margin: 0.5em auto;
-    line-height: 1.5em;
+  max-width: 60em;
+  width: 60em;
+  font-size: 70%;
+  margin: 0.5em auto;
+  line-height: 1.5em;
 }
 
 .outline {
-    max-width: 26em;
-    width: 26em;
-    font-weight: bold;
-    font-size: 175%;
-    padding-top: 1em;
-    margin-bottom: -5px;
+  max-width: 26em;
+  width: 26em;
+  font-weight: bold;
+  font-size: 175%;
+  padding-top: 1em;
+  margin-bottom: -5px;
 }
 
 .sub_outline {
-    max-width: 39em;
-    width: 39em;
-    font-weight: bold;
-    font-size: 115%;
-    margin: 0em auto;
+  max-width: 39em;
+  width: 39em;
+  font-weight: bold;
+  font-size: 115%;
+  margin: 0em auto;
 }
 
 .sub_outline_2 {
-    max-width: 39em;
-    width: 39em;
-    font-weight: bold;
-    font-size: 115%;
-    margin: 0em auto;
+  max-width: 39em;
+  width: 39em;
+  font-weight: bold;
+  font-size: 115%;
+  margin: 0em auto;
 }
 
 /*博士画像と吹き出し周り*/
 .dr_tohyama_inserting {
-    display: flex;
-    margin-top: 0.5vw;
-    margin-bottom: 2.5vw;
+  display: flex;
+  margin-top: 0.5vw;
+  margin-bottom: 2.5vw;
 }
 
 .dr_tohyama_general {
-    width: auto;
-    height: 8.5em;
-    margin: 0.6em;
+  width: auto;
+  height: 8.5em;
+  margin: 0.6em;
 }
 
 .dr_tohyama_textbox {
-    background: white;
-    border: 2px solid;
-    max-width: 35em;
-    width: 35em;
-    height: auto;
-    border-radius: 1.5em;
-    margin: 0.6em;
-    padding: 2px 0;
-    text-align: center;
+  background: white;
+  border: 2px solid;
+  max-width: 35em;
+  width: 35em;
+  height: auto;
+  border-radius: 1.5em;
+  margin: 0.6em;
+  padding: 2px 0;
+  text-align: center;
 }
 
 .dr_tohyama_textbox p {
-    text-align: left;
-    font-size: 1em;
-    margin: 1.5em auto;
-    line-height: 1.3em;
-    max-width: 33.5em;
-    width: 33.5em;
+  text-align: left;
+  font-size: 1em;
+  margin: 1.5em auto;
+  line-height: 1.3em;
+  max-width: 33.5em;
+  width: 33.5em;
 }
 
 .dr_tohyama_textbox p span {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .tohyama_list {
-    display: table;
-    list-style: square;
+  display: table;
+  list-style: square;
 }
 
 .tohyama_list li {
-    text-align: left;
-    margin: 0.1em auto;
-    line-height: 1.25em;
-    max-width: 30.5em;
+  text-align: left;
+  margin: 0.1em auto;
+  line-height: 1.25em;
+  max-width: 30.5em;
 }
 
 .tohyama_list--summary {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .tohyama_list--summary li {
-    padding-block: 10px;
+  padding-block: 10px;
 }
 
 /*表周り*/
 .table-wrap {
-    width: 45em;
-    height: auto;
-    overflow-x: scroll;
+  width: 45em;
+  height: auto;
+  overflow-x: scroll;
 }
 
 table {
-    border-collapse: collapse;
-    margin: auto;
-    white-space: nowrap;
-    margin: 1.5rem auto;
+  border-collapse: collapse;
+  margin: auto;
+  white-space: nowrap;
+  margin: 1.5rem auto;
 }
-
 caption {
-    font-weight: bold;
-    margin: 0 0 0.6em 0.4em;
-    text-align: left;
+  font-weight: bold;
+  margin: 0 0 0.6em 0.4em;
+  text-align: left;
 }
-
 th {
-    background-color: #eaece6;
-    font-weight: normal;
+  background-color: #eaece6;
+  font-weight: normal;
 }
-
 th,
 td {
-    white-space: nowrap;
-    text-align: center;
-    padding: 0.25em 0.725em;
-    border: 1px solid gray;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0.25em 0.725em;
+  border: 1px solid gray;
 }
 
 .article_end {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .article_end div {
-    border: none;
-    border-radius: 10px;
-    background: black;
-    width: 16.5em;
-    height: 3.5em;
-    margin: 0.5em auto;
-    margin-bottom: -2em;
-    cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: black;
+  width: 16.5em;
+  height: 3.5em;
+  margin: 0.5em auto;
+  margin-bottom: -2em;
+  cursor: pointer;
 }
 
 .article_end div p {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin: 0.5em auto;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0.5em auto;
 }
 
 .article_end div a {
-    text-decoration: underline;
-    color: inherit;
+  text-decoration: underline;
+  color: inherit;
 }
 
-
 .footer_section {
-    background: black;
-    text-align: center;
-    padding: 3em 6em;
-    bottom: 0;
-    margin-top: 1.5em;
+  background: black;
+  text-align: center;
+  padding: 3em 6em;
+  bottom: 0;
+  margin-top: 1.5em;
 }
 
 .footer_section p {
-    font-weight: bold;
-    color: white;
+  font-weight: bold;
+  color: white;
 }
 
 .intro_data {
-    font-weight: bold;
-    text-align: left;
+  font-weight: bold;
+  text-align: left;
 }
 
 .intro_data p {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .intro_data p small {
-    margin-left: 0.5rem;
-    font-weight: normal;
-    font-size: 75%;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  font-size: 75%;
 }
 
 .trans_section {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
-
 
 .trans_button {
-    display: center;
-    background: gray;
-    border-radius: 20px;
-    border: none;
-    margin: 0.5em;
-    width: 7em;
-    height: 3.5em;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+  display: center;
+  background: gray;
+  border-radius: 20px;
+  border: none;
+  margin: 0.5em;
+  width: 7em;
+  height: 3.5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
-
 .trans_button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .foot_note {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 :root {
-    /* ---- 表(table)の色 ---- */
-    --th-col: #778ca3;
-    /* グレー */
-    --part-col: #e9faf9;
-    /* 薄い水色 */
-    --total-col: #cdf4f0;
-    /* 濃い水色 */
-    --wprt-col: #f9f8ea;
-    /* 薄い黄 */
-    --whole-col: #f7f3b7;
-    /* 濃い黄 */
-    --obj1-col: #caffbf;
-    /* 明るい緑 */
-    --obj2-col: #eaffe6;
-    /* 明るい緑(薄) */
-    --wide-col: #fdffbb;
-    /* 明るい黄色 */
-    --wid2-col: #feffe2;
-    /* 明るい黄色(薄) */
+  /* ---- 表(table)の色 ---- */
+  --th-col: #778ca3; /* グレー */
+  --part-col: #e9faf9; /* 薄い水色 */
+  --total-col: #cdf4f0; /* 濃い水色 */
+  --wprt-col: #f9f8ea; /* 薄い黄 */
+  --whole-col: #f7f3b7; /* 濃い黄 */
+  --obj1-col: #caffbf; /* 明るい緑 */
+  --obj2-col: #eaffe6; /* 明るい緑(薄) */
+  --wide-col: #fdffbb; /* 明るい黄色 */
+  --wid2-col: #feffe2; /* 明るい黄色(薄) */
 }
 
 a {
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
-
 
 table {
-    text-align: center;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 5px;
-    line-height: 1.3;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 5px;
+  line-height: 1.3;
 }
-
 caption {
-    font-weight: bold;
-    margin: 0 0 5px 3px;
-    text-align: left;
+  font-weight: bold;
+  margin: 0 0 5px 3px;
+  text-align: left;
 }
-
 tr {
-    background-color: var(--part-col);
-    /* ベースは 薄い水色 */
+  background-color: var(--part-col); /* ベースは 薄い水色 */
 }
-
 tr.cgp {
-    background-color: var(--total-col);
-}
-
-/* 濃い水色 tp8で使用 */
+  background-color: var(--total-col);
+} /* 濃い水色 tp8で使用 */
 tr:last-child td {
-    border-bottom: solid 1px var(--th-col);
-    /* 表の下部はグレーの線 */
+  border-bottom: solid 1px var(--th-col); /* 表の下部はグレーの線 */
 }
-
 th {
-    white-space: nowrap;
-    padding: 4px;
-    text-align: center;
-    border: solid 1px #ffffff;
-    background-color: var(--th-col);
-    color: #ffffff;
-    font-weight: normal;
+  white-space: nowrap;
+  padding: 4px;
+  text-align: center;
+  border: solid 1px #ffffff;
+  background-color: var(--th-col);
+  color: #ffffff;
+  font-weight: normal;
 }
-
 td {
-    white-space: nowrap;
-    padding: 4px;
-    text-align: center;
-    border: solid 1px #ffffff;
+  white-space: nowrap;
+  padding: 4px;
+  text-align: center;
+  border: solid 1px #ffffff;
 }
 
 table caption {
-    font-weight: bold;
-    margin: 0 0 2px 3px;
-    text-align: left;
+  font-weight: bold;
+  margin: 0 0 2px 3px;
+  text-align: left;
 }
-
 table caption span {
-    font-weight: normal;
-    font-size: 86%;
+  font-weight: normal;
+  font-size: 86%;
 }
 
 .table_add {
-    font-size: 75%;
+  font-size: 75%;
 }
 
 .table_add_35_6 {
-    font-size: 75%;
-    margin-right: 9rem;
+  font-size: 75%;
+  margin-right: 9rem;
 }
 
 .note {
-    font-size: 10% !important;
-    vertical-align: top;
+  font-size: 10% !important;
+  vertical-align: top;
 }
 
-table+p {
-    margin-top: 18px;
+table + p {
+  margin-top: 18px;
 }
-
-table+p.add_note {
-    margin-top: 0px;
+table + p.add_note {
+  margin-top: 0px;
 }
 
 table.bk1-tp1 tr:nth-child(1) th {
-    min-width: 6.5em;
+  min-width: 6.5em;
 }
-
 .bk1-tp1 th span {
-    font-size: 96%;
+  font-size: 96%;
 }
-
 .bk1-tp1 td:nth-last-child(2) {
-    background-color: var(--total-col);
+  background-color: var(--total-col);
 }
-
 .bk1-tp1 td:nth-last-child(1) {
-    background-color: var(--part-col);
+  background-color: var(--part-col);
 }
 
 table.bk1-tp2 th {
-    min-width: 4em;
+  min-width: 4em;
 }
-
 .bk1-tp2 th span {
-    font-size: 96%;
+  font-size: 96%;
 }
-
 .bk1-tp2 tr:nth-last-child(2) td {
-    background-color: var(--total-col);
+  background-color: var(--total-col);
 }
-
 .bk1-tp2 tr:nth-last-child(1) td {
-    background-color: var(--part-col);
+  background-color: var(--part-col);
 }
 
 .clsn {
-    font-size: 96%;
-    background-color: var(--obj2-col);
+  font-size: 96%;
+  background-color: var(--obj2-col);
 }
 
 .bkname {
-    background-color: var(--obj1-col);
-    padding: 0.5rem;
+  background-color: var(--obj1-col);
+  padding: 0.5rem;
 }
 
 table.bk1-tp3 th {
-    min-width: 3em;
+  min-width: 3em;
 }
-
-.bk1-tp3 tr:nth-child(-n+2) th span {
-    font-size: 86%;
+.bk1-tp3 tr:nth-child(-n + 2) th span {
+  font-size: 86%;
 }
-
 .bk1-tp3 th.detail {
-    font-size: 86%;
-    line-height: 0.95;
-    padding-top: 3px;
+  font-size: 86%;
+  line-height: 0.95;
+  padding-top: 3px;
 }
-
 .bk1-tp3 tr:nth-last-child(2) {
-    background-color: var(--obj1-col);
-}
-
-/* 黄緑 */
+  background-color: var(--obj1-col);
+} /* 黄緑 */
 .bk1-tp3 tr:nth-last-child(1) {
-    background-color: var(--wide-col);
-}
-
-/* 黄 */
-.bk1-tp3 tr:nth-last-child(2) td:nth-child(n+3):nth-child(-n+6) {
-    background-color: var(--obj2-col);
-}
-
-/* 薄い黄緑 */
-.bk1-tp3 tr:nth-last-child(1) td:nth-child(n+3):nth-child(-n+6) {
-    background-color: var(--wid2-col);
-}
-
-/* 薄い 黄  */
+  background-color: var(--wide-col);
+} /* 黄 */
+.bk1-tp3 tr:nth-last-child(2) td:nth-child(n + 3):nth-child(-n + 6) {
+  background-color: var(--obj2-col);
+} /* 薄い黄緑 */
+.bk1-tp3 tr:nth-last-child(1) td:nth-child(n + 3):nth-child(-n + 6) {
+  background-color: var(--wid2-col);
+} /* 薄い 黄  */
 
 .bk1-tp4 tr:nth-last-child(2) td:nth-child(1) {
-    background-color: var(--obj1-col);
+  background-color: var(--obj1-col);
 }
-
 .bk1-tp4 tr:nth-last-child(1) td:nth-child(1) {
-    background-color: var(--wide-col);
+  background-color: var(--wide-col);
 }
-
 .bk1-tp4 th:nth-child(1) {
-    width: 200px;
+  width: 200px;
 }
-
 .bk1-tp4 th:nth-child(2) {
-    width: 300px;
+  width: 300px;
 }
 
 .bk1-tp4 td:last-child span {
-    display: inline-block;
-    box-sizing: border-box;
-    font-size: 72%;
-    line-height: 1.05;
-    height: 2.3em;
-    padding-top: 1px;
-    padding-bottom: 0px;
-    vertical-align: middle;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 72%;
+  line-height: 1.05;
+  height: 2.3em;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
-
 .bk1-tp4 td:last-child span:last-child {
-    border-right: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .bk1-tp4 td span.ngc {
-    background-color: #a0c4ff;
+  background-color: #a0c4ff;
 }
-
 .bk1-tp4 td span.mkc {
-    background-color: #ffadad;
+  background-color: #ffadad;
 }
-
 .bk1-tp4 td span.ssc {
-    background-color: #ffd6a5;
+  background-color: #ffd6a5;
 }
-
 .bk1-tp4 td span.kkc {
-    background-color: #caffbf;
+  background-color: #caffbf;
 }
-
 .bk1-tp4 td span.ccc {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
-
-.bk1-tp4 td:nth-child(n+2) {
-    padding: 2px;
+.bk1-tp4 td:nth-child(n + 2) {
+  padding: 2px;
 }
-
 
 table.bk1-tp5 th {
-    min-width: 4.2em;
+  min-width: 4.2em;
 }
-
 .bk1-tp5 th span {
-    font-size: 96%;
+  font-size: 96%;
 }
-
 .bk1-tp5 th {
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 .bk1-tp5 tr:nth-last-child(2) {
-    background-color: var(--obj2-col);
-}
-
-/* 薄い黄緑 */
+  background-color: var(--obj2-col);
+} /* 薄い黄緑 */
 .bk1-tp5 tr:nth-last-child(1) {
-    background-color: var(--wid2-col);
-}
-
-/* 薄い黄 */
-.bk1-tp5 tr:nth-last-child(2) td:nth-child(-n+2) {
-    background-color: var(--obj1-col);
-}
-
-/* 黄緑 */
-.bk1-tp5 tr:nth-last-child(1) td:nth-child(-n+2) {
-    background-color: var(--wide-col);
-}
-
-/*  黄  */
+  background-color: var(--wid2-col);
+} /* 薄い黄 */
+.bk1-tp5 tr:nth-last-child(2) td:nth-child(-n + 2) {
+  background-color: var(--obj1-col);
+} /* 黄緑 */
+.bk1-tp5 tr:nth-last-child(1) td:nth-child(-n + 2) {
+  background-color: var(--wide-col);
+} /*  黄  */
 
 .bk1-tp10 {
-    width: 400px;
+  width: 400px;
 }
 
 .bk1-tp6 td {
-    padding: 2px 6px;
+  padding: 2px 6px;
 }
-
 td.bkname {
-    width: 1.2em;
+  width: 1.2em;
 }
-
 .bk1-tp6 td span {
-    font-size: 96%;
+  font-size: 96%;
 }
 
 .bkname {
-    background-color: var(--obj1-col);
+  background-color: var(--obj1-col);
 }
-
 .bk1-tp6 tr:nth-last-child(2) td {
-    background-color: var(--obj1-col);
+  background-color: var(--obj1-col);
 }
-
 .bk1-tp6 tr:last-child td {
-    background-color: var(--wide-col);
+  background-color: var(--wide-col);
 }
-
-
 
 table.inlist {
-    padding: 0;
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
+  padding: 0;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
 }
-
 table.inlist th,
 table.inlist td {
-    font-size: 13px;
-    font-weight: normal;
-    padding: 3px;
-    text-align: center;
-    border: solid 1px gray;
-    background-color: #fff;
-    color: #000;
-    line-height: 1.1;
-    min-width: 4em;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 3px;
+  text-align: center;
+  border: solid 1px gray;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.1;
+  min-width: 4em;
 }
-
 table.inlist th {
-    background-color: #eaece6;
+  background-color: #eaece6;
 }
-
 table.inlist td.challenge {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 table.tbl-average {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 table.tbl-average th {
-    background-color: #778ca3;
-    color: #ffffff;
-    font-weight: normal;
+  background-color: #778ca3;
+  color: #ffffff;
+  font-weight: normal;
 }
 
 table.tbl-average td {
-    background-color: #ffffff;
-    color: #000;
-    font-weight: normal;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: normal;
 }
 
 table.tbl-average th,
 table.tbl-average td {
-    white-space: nowrap;
-    text-align: center;
-    padding: 2px 6px;
-    border: solid 0.1px #666666;
+  white-space: nowrap;
+  text-align: center;
+  padding: 2px 6px;
+  border: solid 0.1px #666666;
 }
 
 table.g-kimarite {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 table.g-kimarite td:nth-child(1) {
-    line-height: 120%;
+  line-height: 120%;
+}
+table.g-kimarite td:nth-child(n + 2) {
+  width: 210px;
 }
 
-table.g-kimarite td:nth-child(n+2) {
-    width: 210px;
+table.g-kimarite td:nth-child(n + 2):nth-child(-n + 4) span {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 80%;
+  line-height: 110%;
+  height: 2.7em;
+  padding-top: 2px;
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
-
-table.g-kimarite td:nth-child(n+2):nth-child(-n+4) span {
-    display: inline-block;
-    box-sizing: border-box;
-    font-size: 80%;
-    line-height: 110%;
-    height: 2.7em;
-    padding-top: 2px;
-    vertical-align: middle;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+table.g-kimarite td:nth-child(n + 2) span:nth-child(1) {
+  background-color: #a0c4ff;
 }
-
-table.g-kimarite td:nth-child(n+2) span:nth-child(1) {
-    background-color: #a0c4ff;
+table.g-kimarite td:nth-child(n + 2) span:nth-child(2) {
+  background-color: #ffadad;
 }
-
-table.g-kimarite td:nth-child(n+2) span:nth-child(2) {
-    background-color: #ffadad;
+table.g-kimarite td:nth-child(n + 2) span:nth-child(3) {
+  background-color: #ffd6a5;
 }
-
-table.g-kimarite td:nth-child(n+2) span:nth-child(3) {
-    background-color: #ffd6a5;
-}
-
-table.g-kimarite td:nth-child(n+2) span:nth-child(4) {
-    background-color: #caffbf;
-    border-right: 1px solid black;
+table.g-kimarite td:nth-child(n + 2) span:nth-child(4) {
+  background-color: #caffbf;
+  border-right: 1px solid black;
 }
 
 .footer_button {
-    display: center;
-    font-size: 40%;
-    background: black;
-    border-radius: 10px;
-    border: none;
-    margin: 0.5em;
-    width: auto;
-    height: 3em;
-    padding: 1px 4.5px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+  display: center;
+  font-size: 40%;
+  background: black;
+  border-radius: 10px;
+  border: none;
+  margin: 0.5em;
+  width: auto;
+  height: 3em;
+  padding: 1px 4.5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .footer_button a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .to_footer {
-    text-decoration: underline;
-    font-weight: normal;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+/* -------------------------------------- */
+/*    bank_type3.css         2024.08.19   */
+/* -------------------------------------- */
+/* -- bank_type2.css と同じ部分 --------- */
+/* -- aside の修飾 -- */
+aside.amemo:before {
+  position: absolute;
+  top: -9px;
+  left: 15px;
+  background-color: #f8f8f8;
+  content: "< memo >";
+}
+aside.amemo content {
+  position: absolute;
+  top: -9px;
+  left: 35px;
+  background-color: #f8f8f8;
+}
+/* ---------------------- */
+.sml86f {
+  font-size: 86%;
+}
+.indent1 {
+  text-indent: -1.4em;
+  padding-left: 1.4em;
+}
+/* ---------------------- */
+table + p.add_note {
+  margin-bottom: 2px;
+} /* add_note が2行連続した場合は、行間を狭めに */
+p.add_note + p.add_note {
+  margin-top: 2px;
+} /*       〃                                   */
+
+/* ---------------------------------------- */
+/* -- 以下は bank_type3.css のオリジナル -- */
+/* bk1-tp1 の33バンク版 */
+.bk3-tp1b tr:nth-child(1) th {
+  min-width: 6.5em;
+}
+.bk3-tp1b td:nth-last-child(3) {
+  background-color: var(--total-col);
+}
+.bk3-tp1b td:nth-last-child(-n + 2) {
+  background-color: var(--part-col);
+}
+
+/* bk1-tp6 の33バンク版 */
+.bk3-tp6b td {
+  padding: 2px 6px;
+}
+.bk3-tp6b td span {
+  font-size: 96%;
+}
+.bk3-tp6b tr:nth-last-child(3) td {
+  background-color: var(--obj1-col);
+}
+.bk3-tp6b tr:nth-child(7) td {
+  background-color: var(--obj1-col);
+}
+.bk3-tp6b tr:nth-last-child(-n + 2) td {
+  background-color: var(--wide-col);
+}
+
+/* 33・500バンク用 bk1-tp4 への追加 */
+.bk3-tp4b tr:nth-last-child(3) td:nth-child(1) {
+  background-color: var(--obj1-col);
+} /* 2025.9.20mody obj2-col → obj1-col */
+.bk3-tp4b tr:nth-last-child(2) td:nth-child(1) {
+  background-color: var(--wide-col);
+}
+
+/* 脚注のバンク長別のスジ車券率・力車券率 inlist への追加 */
+.inlist-add1 td:nth-child(1) {
+  background-color: var(--parl-col);
+}
+.inlist-add1 tr:nth-child(5) td {
+  background-color: var(--wid2-col);
+}
+
+/* markerY 以外のアンダーライン */
+.xudlr1 {
+  text-decoration: solid underline 1px red;
+  text-underline-offset: 0.2em;
+} /* art37等をベースに新規 */
+.xudlr2 {
+  text-decoration: solid underline 2px red;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlg1 {
+  text-decoration: solid underline 1px green;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlg2 {
+  text-decoration: solid underline 2px green;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlh1 {
+  text-decoration: solid underline 1px #4d4d4d;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlh2 {
+  text-decoration: solid underline 2px #4d4d4d;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+
+/* th等の背景色が暗い部分でも sup4 や リンク */
+a.white-text {
+  color: white;
+}
+.white-text {
+  color: white;
+}
+
+/*    以上は bank_type3.css と同じ               */
+/* --------------------------------------------- */
+/*   以下は bank_type3.css に対して 追加した項目 */
+
+/* 33・500バンク用 bk1-tp6 への追加 */
+.bk3-tp6c tr:nth-last-child(3) td {
+  background-color: var(--obj1-col);
+} /*  2025.9.20mody obj2-col → obj1-col */
+.bk3-tp6c tr:nth-last-child(2) td {
+  background-color: var(--wide-col);
 }
